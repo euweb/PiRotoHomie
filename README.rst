@@ -3,7 +3,7 @@ PiRotoHomie
 ===========
 
 
-Add a short description here!
+Homie convention inferface for controlling roller shutters of a Roto roof window using an EasyControl remote connected to a RaspberryPi
 
 
 Description
