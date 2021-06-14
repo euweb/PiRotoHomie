@@ -1,0 +1,14 @@
+MQTT_SETTINGS:
+  MQTT_BROKER: localhost
+  MQTT_PORT: 1883
+#    MQTT_USERNAME: None
+#    MQTT_PASSWORD: None
+#    MQTT_KEEPALIVE: 60
+#    MQTT_CLIENT_ID: None
+#    MQTT_SHARE_CLIENT: None
+
+PiRotoWindow:
+  Channel1:
+    Number: 1
+  Channel2:
+    Number: 2
