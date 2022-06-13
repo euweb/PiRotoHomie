@@ -15,6 +15,7 @@ MQTT_DEFAULT_SETTINGS = {
 
 VALUES = "OPEN,OPENING,STOP,CLOSING,CLOSED"
 
+
 class DeviceRotoRollershutter(Device_Base):
     def __init__(self,
                  device_id="roto",
@@ -26,11 +27,12 @@ class DeviceRotoRollershutter(Device_Base):
 
         node = Node_Base(self, "controls", "Controls", "controls")
 
-        node.add_property(Property_Enum(self,data_format="UP,DOWN,STOP"))
+        node.add_property(Property_Enum(self, data_format="UP,DOWN,STOP"))
 
         self.add_node(node)
 
-        self.add_node(Node_State(self,state_values=VALUES,set_state=self.set_state))
+        self.add_node(Node_State(self, state_values=VALUES,
+                      set_state=self.set_state))
 
         logger.info('done')
 
